@@ -2,47 +2,44 @@
 <html lang="en">
 
 <head>
-
 <!-- Start of Async Drift Code -->
 <script>
-"use strict";
-
-!function() {
-  var t = window.driftt = window.drift = window.driftt || [];
-  if (!t.init) {
-    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-    };
-  }
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('dp75kuwmteu6');
-</script>
-<!-- End of Async Drift Code -->
-
-
+  "use strict";
   
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4574N25ET"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('dp75kuwmteu6');
+  </script>
+  <!-- End of Async Drift Code -->   
 
-  gtag('config', 'G-H4574N25ET');
-</script>
+
+
+
+
+
+
+
+
+
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -59,12 +56,13 @@ drift.load('dp75kuwmteu6');
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
   <script src="https://kit.fontawesome.com/317860518e.js" crossorigin="anonymous"></script>
+ 
   <script>
     // Disable right-click on the entire document
     document.addEventListener('contextmenu', function (e) {
         e.preventDefault();
     });
-</script>
+</script>  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -77,7 +75,110 @@ drift.load('dp75kuwmteu6');
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style2.css" rel="stylesheet">
+  <link href="assets/css/x.css" rel="stylesheet">
+  <link href="lens.css" rel="stylesheet">
+
+
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+ 
+     gtag('config', 'UA-169007209-3');
+   </script>
+
+
+  <style>
+   .bd {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+color: white;
+  
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none; /* Prevent resizing of the textarea */
+}
+
+button {
+  background-color: #FFFC00;
+  color: #000;
+  border: none; /* Remove the border */
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+</style>
+
+
+  <style>
+    nav {
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+button {
+border-radius: 12px;
+font-family: Georgia;
+color: #000000;
+font-size: 10px;
+background: #fffb00;
+padding: 10px 20px 10px 20px;
+border: solid #ffffff 0px;
+text-decoration: none;
+}
+
+button.active {
+  background: #fffb00;
+background-image: -webkit-linear-gradient(top, #fffb00, #c2bf00);
+background-image: -moz-linear-gradient(top, #fffb00, #c2bf00);
+background-image: -ms-linear-gradient(top, #fffb00, #c2bf00);
+background-image: -o-linear-gradient(top, #fffb00, #c2bf00);
+background-image: linear-gradient(to bottom, #fffb00, #c2bf00);
+text-decoration: none;
+}
+
+.container {
+  background-color: #1e1e1e;
+}
+
+
+.nav-menu {
+
+  background-color: #1e1e1e;
+}
+
+  </style>
+
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -90,7 +191,14 @@ drift.load('dp75kuwmteu6');
     gtag('config', 'UA-169007209-3');
   </script>
 
+<style>
+  
 
+.carousel-3d-slide {
+      height: auto !important;
+      background-color: rgba(0, 0, 0, 0.25) !important;
+    }
+</style>
 
   <!-- =======================================================
   * Template Name: Personal - v2.1.0
@@ -98,8 +206,7 @@ drift.load('dp75kuwmteu6');
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
-
+  
 </head>
 
 <body>
@@ -109,39 +216,44 @@ drift.load('dp75kuwmteu6');
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
+
+
+
+
+  
+  <header id="header" class="header-tops" style="background-color: #1e1e1e;">
 
     <div class="container">
-
-      <h1><a href="index.html"><img src="assets/img/Hama Gardyy.png" alt="Your Image" style="max-width: 80%; height: auto;"></a></h1>
+<h1><a href="#"><img src="assets/img/Hama Gardyy.png" alt="Your Image" style="max-width: 80%; height: auto;"></a></h1>
       <h2 style="color:#fff">I'm <span class="typing" style="color: #FFFC00;
         "></span></h2>
+        
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header"> <span>Home</span></a></li>
           <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#"  onclick="myFunction()"> <span>Snapchat Lenses</span></a></li>
-          <script>
-            function myFunction() {
-              alert("Soon!");
-            }
-            </script>
-            
+          <li><a href="#Snapchat" > <span>Snapchat AR Lenses </span></a></li>
 
 
-          <!--
-          <li><a href="#education"> <span>Education</span></a></li>
+          
+       <!-- <li><a href="#education"> <span>Contact Me </span></a></li>
+         
           <li><a href="#experience"> <span>Experience</span></a></li>
           <li><a href="#skills"> <span>Skills</span></a></li>
           <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li>
-          <li><a href="#contacts"> <span>Contact</span></a></li>
--->
+       -->
+       
+       
+       
+       <li><a href="#contacts"> <span>Contact</span></a></li>
+
         </ul>
       </nav><!-- .nav-menu -->
 
+      
       <div class="social-links">
         <a href="https://www.snapchat.com/add/itzgardy" target="_blank" class="snapchat"><i class="bx bxl-snapchat"></i></a>
-        <a href="https://xrbazaar.co/creators/hamagardy/" target="_blank" class="telegram"><img src="assets/img/xra.png" alt="Your Image" style="max-width:100%; max-height: 300px;">
+        <a href="#Snapchat"  class="telegram"><img src="https://images.ctfassets.net/ub38vssza5h3/5ZqVZZn7ZaDXf4xZoJNhjn/e40447a8fb42ee5c635d79c53c192da6/AR_Logo_Updated.png" alt="Your Image" style="max-width:100%; max-height: 300px;">
 
         <a href="https://twitter.com/hamagardy_" target="_blank" class="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://www.instagram.com/_hama_gardy" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -153,6 +265,9 @@ drift.load('dp75kuwmteu6');
 
       </div>
        <div class="social-links">
+        <br>
+        <br>
+        
         <img src="assets/img/here.png" alt="Your Image" style="max-width: 300px; max-height: 300px;">
       </div> 
 
@@ -680,102 +795,7 @@ drift.load('dp75kuwmteu6');
       </div>
     </div>
   </section> <!--End Links Section -->
+ <!-- Start Contact Section -->
 
-
-  <!-- Start Contact Section -->
-
-  <section id="contacts" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>1275 E University Dr</p>
-            <p>Unit 212</p>
-            <p>Tempe, AZ 85281</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/rajaprerak" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.github.com/rajaprerak" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:rajaprerak@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <p>rajaprerak@gmail.com</p>
-            <p>pkraja@asu.edu</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Contact</h3>
-            <p>+1 480-401-8112</p>
-          </div>
-        </div>
-      </div>
-      <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
-    </div>
-  </section>
-
-  <!-- End Contact Section -->
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Lens Creator", "Developer", "AR/VR Creator"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main1.js"></script>
-
-<!-- Start of Woopra Code -->
-<script>
-  !function(){var t,o,c,e=window,n=document,r=arguments,a="script",i=["call","cancelAction","config","identify","push","track","trackClick","trackForm","update","visit"],s=function(){var t,o=this,c=function(t){o[t]=function(){return o._e.push([t].concat(Array.prototype.slice.call(arguments,0))),o}};for(o._e=[],t=0;t<i.length;t++)c(i[t])};for(e.__woo=e.__woo||{},t=0;t<r.length;t++)e.__woo[r[t]]=e[r[t]]=e[r[t]]||new s;(o=n.createElement(a)).async=1,o.src="https://static.woopra.com/js/w.js",(c=n.getElementsByTagName(a)[0]).parentNode.insertBefore(o,c)}("woopra");
-
-  woopra.config({
-    domain: "hamagardy.com",
-    outgoing_tracking: true,
-    download_tracking: true,
-    click_tracking: true
-  });
-  
-  woopra.track();
-</script>
-<!-- End of Woopra Code -->
-
-</body>
-
-</html>
+ 
+<section id="Snapchat" class="contact"><div class="container"><div class="section-title"></div><nav><button onclick='filterGallery("all")' class="filter-button active">All</button><button onclick='filterGallery("top")' class="filter-button">Top Lenses</button><button onclick='filterGallery("Games")' class="filter-button">Games</button><button onclick='filterGallery("event")' class="filter-button">Events</button><button onclick='filterGallery("fashion")' class="filter-button">Fashion</button></nav><div class="gallery"><div class="gallery-item" data-category="top"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/1b4c815e-ebb6-414c-a1e3-e3db7aa359f5.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/lens/b27b206e6ace49b5a7880216f158e06e?sender_web_id=68ad9768-5e3c-45cf-8e3b-1bb9fb69af94&device_type=desktop&is_copy_url=true" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/b0a41ca6-8dfa-3553-81ed-8a20c55ea433_320_b74a88ff-e41f-4658-b4ae-1ef551cd446a.png"></a><center><p style="color:#fff">Piano & Drum Kit</p></center></div><div class="gallery-item" data-category="top"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/bb80c21b-7122-4261-8438-1d44cfbd11b7.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/lens/10ac0723d8e84bc89678647952abf537?sender_web_id=723e7aa3-1d5b-4aa7-8ece-b3a7199b5733&device_type=desktop&is_copy_url=true" target="_blank"><img class="icon-overlay" src="https://app.snapchat.com/web/deeplink/snapcode?data=10ac0723d8e84bc89678647952abf537&version=1&type=svg"></a><center><p style="color:#fff">Citypedia</p></center></div><div class="gallery-item"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/a02a6968-b794-4120-8012-1263aae59466.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=080bc75c430949b8b76516d41caf36a9&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/8c9fbd90-d9e1-3932-a811-1bc98148ac7c_320_1248363c-b791-4b49-b8cb-836800dce328.png"></a><center><p style="color:#fff">Eyes Popper</div><div class="gallery-item" data-category="Games"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/716aacc9-2b9c-421b-b63e-a25a201d6970.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=b44c9d4223944360b92ad04ffd065001&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/6b0668f5-cc98-373d-9ff1-8dd99b6020e8_320_d7b850f9-688d-463d-8eda-d18aa144d717.png"></a><center><p style="color:#fff">Loot N Run</p></center></div><div class="gallery-item" data-category="event"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/588b8186-2cda-4798-833a-3fdf5dd03b71.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=07d0e4ee490d434fad750273a760b20a&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/669c6dd3-4099-30b5-9fd0-1513ab481623_320_9a020123-1ec0-447e-9cf4-15e85d6214e0.png"></a><center><p style="color:#fff">Halloween Sprint</p></center></div><div class="gallery-item" data-category="Games"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/c04853ae-b91b-47ad-b687-2ddaaea5a72d.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=da292b459e914879becc6188eb86885b&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/0316bd5d-3127-3955-96f9-50303692f26a_320_2b3b4ee4-082f-49cd-b498-6f427f12b389.png"></a><center><p style="color:#fff">Rc Plane</p></center></div><div class="gallery-item" data-category=""><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/5b128e8b-2cdc-4c4b-8952-47089a801fee.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8676cd7165f449cca6a2b400b6ec5db6&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/cb2b42aa-edb1-3a7c-bf99-b2643d37ef51_320_ac067283-1780-4bb0-ac4b-9b9d51b9e28a.png"></a><center><p style="color:#fff">Fantasy Face</p></center></div><div class="gallery-item"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/141f8f4c-3bf6-4836-8161-392c8a3dc958.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e29a8a10bf4f474a941df69728b3cc3e&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/7406beb7-fa91-3260-ab96-fef8ded18d1b_320_2002f734-5219-4565-9dd4-a93c286b744f.png"></a><center><p style="color:#fff">Quantum Reality</p></center></div><div class="gallery-item"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/7d8173e6-cce4-466b-b248-ea5b41fdf7e7.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=5f88db56726544bda0143998b0fe678e&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/3e980b01-7127-38e3-8021-28fae890a79a_320_e0ea44d2-fc69-486e-881a-803c2d3733d1.png"></a><center><p style="color:#fff">Space Knight</p></center></div><div class="gallery-item" data-category="event"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/5a978752-482a-495a-bc18-7888925bac6a.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=26df71b4418f4609bf3e372d343e09cf&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/257a5db9-f6cf-374e-a1b5-5297720894d0_320_80a1ae01-2ba3-46f3-b956-d4a0230bf4c8.png"></a><center><p style="color:#fff">Horror Halloween</p></center></div><div class="gallery-item" data-category="event"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/1071cc27-455f-4f16-846e-0f0388c1d186.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=95b0f51a45444f308ca5deab2988276e&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/7bdfdab9-d10f-3942-9ced-836b780e72d3_320_fbc5a668-b1e3-494e-a6d5-f8973d06145f.png"></a><center><p style="color:#fff">Halloween Ghost</p></center></div><div class="gallery-item" data-category=""><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/f24b2237-4866-4825-870b-1cabbeff21c5.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=1d420f7f4fb14f77ab8093aac0408376&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/6835b80d-bdec-398f-9ae6-e3ad5482bd41_320_a39622b6-9241-4ce8-acce-8a7241e0eec6.png"></a><center><p style="color:#fff">Frozen Shark Watch</p></center></div><div class="gallery-item"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/30946a00-2acf-4a34-948e-69a6b4d4c1f5.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=d38133ec2366495eb78e4fb20e17449f&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/67010c0d-e8f1-3bad-a82e-ca9195caae7f_320_cf574dcd-5a89-41f2-a347-19369b5d153e.png"></a><center><p style="color:#fff">AR Aquaruim Shark</p></center></div><div class="gallery-item"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/3ab85afa-15fc-4a8d-9406-4de1c9622925.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=d02ca95368b84370af5264fd64dde31c&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/d0c8fb24-8125-3014-9425-0c21dbcf0f54_320_7eca160a-d19e-475b-8369-b695476edaed.png"></a><center><p style="color:#fff">Omnitrix Upgrade</p></center></div><div class="gallery-item" data-category="event"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/8b50a425-94ce-46a0-b1f8-033809f06580.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=2e969180bfbb45ba91e9145445078905&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/2451f1d3-37b7-3864-a729-850fb106fa00_320_c050268f-dfc4-4ef7-8fd3-93e114e68e1a.png"></a><center><p style="color:#fff">Newroz Bonfire</p></center></div><div class="gallery-item" data-category="event"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/17837548-01c1-4ccf-b98a-d17166d5d234.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=3b198971b86e4fba9f5e9302a496d454&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/16b83fb7-80dd-363d-9d25-6267cccab28b_320_381f3fbf-1f8a-4879-92f6-e7ce680ccd0f.png"></a><center><p style="color:#fff">Ramadan Lamp</p></center></div><div class="gallery-item" data-category="Games"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/16bc6253-d63d-4a3c-8f4a-2bb56c642392.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=c110540bf48444929c19e18edc6eb3f5&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/ec883af2-65fc-3154-8839-bfcaf174dbea_320_62df672d-c46c-4d4f-85d9-ea37cae1baa0.png"></a><center><p style="color:#fff"></p>Neon Air Hockey</center></div><div class="gallery-item" data-category="Games"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/9855f101-5479-4937-a139-be6f1397dcd9.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=d9e6779b5a794cfc95e48fbb0aa49665&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/a133f441-190c-3ba1-aad7-e8b75fd581f4_320_03ab87f2-b361-4cf5-b28f-3d240e2c856c.png"></a><center>Crystal miner Game<p style="color:#fff"></p></center></div><div class="gallery-item" data-category="event"><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/3aeb2782-cb9b-4d69-a41f-561682507656.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=f81c8b89988f4d958d321253949ca1ff&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/5cc00ba5-5852-34d0-9bb4-9ccef17238da_320_af636bb9-b337-4a4d-bca2-4f84b701b564.png"></a><center>Eid Al Adha<p style="color:#fff"></p></center></div><div class="gallery-item" data-category=""><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/83ad340d-3d81-45e4-9343-8584b2ddc940.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=a82e5635903f422680ff0833c6920d25&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/15305516-25a1-3a43-8109-ea3f66c1d778_320_092c9871-7b9a-4b12-b38b-261eb87d9014.png"></a><center><p style="color:#fff">Mama Vandam 3D</p></center></div><div class="gallery-item" data-category=""><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/ed1da12d-f299-4886-89f4-57c8f2217687.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e553e08c13884896be2870aa4fb51efe&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/241587dc-07e7-3391-bdab-028eeb72a51c_320_4dccb776-962f-4b94-9ef0-d26d61d0fe9a.png"></a><center><p style="color:#fff"></p>Broken Clown</center></div><div class="gallery-item" data-category=""><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/d03e4f02-f27c-4fa5-84f6-1671b8dcaefc.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=1bb45e4388e04f69a395d09705e93c8d&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/06c2ac30-dfde-39f0-a377-e45f40b32647_320_00ee8b3e-df87-4817-98c3-19293a2a3a56.png"></a><center><p style="color:#fff">ElecMummy</p></center></div><div class="gallery-item" data-category=""><video autoplay loop muted playsinline><source src="https://community-lens.storage.googleapis.com/preview-media/final/18310748-ddb4-45d1-8f7c-ba7f1345fc5b.mp4" type="video/mp4">Your browser does not support the video tag.</video><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=d93b6ab67c46492ab97d5bf83044c92b&metadata=01" target="_blank"><img class="icon-overlay" src="https://snapcodes.storage.googleapis.com/png/b1a2916c-b411-362b-957a-5099ba6157e7_320_6a412fff-e9b8-456e-b4ee-68fb5f71f683.png"></a><center><p style="color:#fff"></p>X-Ray</center></div></div><script>function filterGallery(l){document.querySelectorAll(".gallery-item").forEach(function(t){var e=t.getAttribute("data-category");t.style.display="all"===l||l===e?"block":"none"}),document.querySelectorAll(".filter-button").forEach(function(t){t.classList.remove("active"),t.getAttribute("onclick").includes(l)&&t.classList.add("active")})}</script></section><section id="contacts" class="contact"><div class="container"><div class="section-title"><h2>Contact</h2></div><center><div class="bd"><form action="https://formsubmit.co/hgardyy@gmail.com" method="post"><label for="username">Username:</label><input type="text" id="username" name="username" required><label for="subject">Subject:</label><input type="text" id="subject" name="subject" required><label for="email">Email:</label><input type="email" id="email" name="email" required><label for="message">Message:</label><textarea id="message" name="message" rows="4" required></textarea><button type="submit">Send</button></form></div></center><div class="row mt-2"><div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch"><div class="info-box"><i class="bx bx-share-alt"></i><h3 style="color:#fffc00">Social Profiles</h3><div class="social-links"><a href="https://www.t.me/itzgardy/" target="_blank" class="telegram"><i class="bx bxl-telegram"></i></a><a href="mailto:hgardy5@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a></div></div></div><div class="col-md-6 mt-4 d-flex align-items-stretch"><div class="info-box"><i class="bx bx-envelope"></i><h3 style="color:#fffc00">Email</h3><p>hgardy5@gmail.com</p><p></p></div></div></div></div></section><script src="assets/vendor/jquery/jquery.min.js"></script><script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script><script src="assets/vendor/php-email-form/validate.js"></script><script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script><script src="assets/vendor/counterup/counterup.min.js"></script><script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script><script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script><script src="assets/vendor/venobox/venobox.min.js"></script><script src="assets/vendor/typed.js/typed.min.js"></script><script type="text/javascript">var typed=new Typed(".typing",{strings:["Lens Creator","Developer","AR/VR Creator"],loop:!0,typeSpeed:65,backSpeed:65})</script><script src="assets/js/main1.js"></script><script>!function(){var o,t,c,n=window,a=document,r=arguments,e="script",i=["call","cancelAction","config","identify","push","track","trackClick","trackForm","update","visit"],s=function(){var o,t=this,c=function(o){t[o]=function(){return t._e.push([o].concat(Array.prototype.slice.call(arguments,0))),t}};for(t._e=[],o=0;o<i.length;o++)c(i[o])};for(n.__woo=n.__woo||{},o=0;o<r.length;o++)n.__woo[r[o]]=n[r[o]]=n[r[o]]||new s;(t=a.createElement(e)).async=1,t.src="https://static.woopra.com/js/w.js",(c=a.getElementsByTagName(e)[0]).parentNode.insertBefore(t,c)}("woopra"),woopra.config({domain:"hamagardy.com",outgoing_tracking:!0,download_tracking:!0,click_tracking:!0}),woopra.track()</script>
