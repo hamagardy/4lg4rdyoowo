@@ -4,3 +4,4 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 ErrorDocument 404 http://localhost/web/404.html
 deny from 185.75.225.159
+deny from 62.201.243.242
