@@ -234,7 +234,7 @@ text-decoration: none;
           <li><a href="#about"><span>About</span></a></li>
           <li><a href="#Snapchat" > <span>Snapchat AR Lenses </span></a></li>
           <li><a href="#education"> <span>Tutorials</span></a></li>
-          <li><a href="#" onclick="openPopup()"> <span>SnapAR CameraKit</span></a></li>
+          <li><a href="#" onclick="openModal()"> <span>SnapAR CameraKit</span></a></li>
           <li><a href="#contacts"> <span>Contact</span></a></li>
 
          
@@ -246,24 +246,26 @@ text-decoration: none;
           <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li>
        -->
        
-       
-        <!-- Popup container -->
-        <div id="popup">
-          <p>Soon</p>
-          <button onclick="closePopup()">Close</button>
-      </div>
-      
-      <script>
-          // JavaScript functions to open and close the popup
-          function openPopup() {
-              document.getElementById("popup").style.display = "block";
-          }
-      
-          function closePopup() {
-              document.getElementById("popup").style.display = "none";
-          }
-      </script>
+       <div id="modal-overlay" onclick="closeModal()">
+        <div id="modal-content">
+            <p>Soon</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
 
+    <script>
+        function openModal() {
+            // Show the modal overlay
+            document.getElementById('modal-overlay').style.display = 'flex';
+        }
+
+        function closeModal() {
+            // Close the modal overlay
+            document.getElementById('modal-overlay').style.display = 'none';
+        }
+    </script>
+
+    
         </ul>
       </nav><!-- .nav-menu -->
 
