@@ -10,10 +10,15 @@
     RewriteCond %{REQUEST_FILENAME}.html -f
     RewriteRule ^(.*)$ $1.html [L]
 
+    # Redirect from http:// to https://
+    RewriteCond %{HTTP_HOST} ^hamagardy\.com [NC]
+    RewriteCond %{SERVER_PORT} 80
+    RewriteRule ^(.*)$ https://hamagardy.com/$1 [R=301,L]
+
 </IfModule>
 
 # Custom error page for 404
-ErrorDocument 404 404.html
+ErrorDocument 404 /404.html
 
 # Block specific IPs
 <RequireAll>
