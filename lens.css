@@ -81,7 +81,7 @@
 
  /* Add some basic styling to the popup */
  #modal-overlay {
-  display: none;
+  display: flex; /* Change from 'none' to 'flex' */
   position: fixed;
   top: 0;
   left: 0;
