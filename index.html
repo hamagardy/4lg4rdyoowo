@@ -234,13 +234,29 @@ text-decoration: none;
           <li><a href="#about"><span>About</span></a></li>
           <li><a href="#Snapchat" > <span>Snapchat AR Lenses </span></a></li>
           <li><a href="#education"> <span>Tutorials</span></a></li>
+          <li><a href="#" onclick="openPopup()"> <span>SnapAR CameraKit</span></a></li>
 
-
+          <!-- Popup container -->
+          <div id="popup">
+              <p>Soon</p>
+              <button onclick="closePopup()">Close</button>
+          </div>
+          
+          <script>
+              // JavaScript functions to open and close the popup
+              function openPopup() {
+                  document.getElementById("popup").style.display = "block";
+              }
+          
+              function closePopup() {
+                  document.getElementById("popup").style.display = "none";
+              }
+          </script>
           
        <!-- 
          
           <li><a href="#experience"> <span>Experience</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
+          
           <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li>
        -->
        
