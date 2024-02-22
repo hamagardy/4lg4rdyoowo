@@ -1,8 +1,24 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
-ErrorDocument 404 http://localhost/web/404.html
-deny from 185.75.225.159
-deny from 62.201.243.242
-deny from 212.237.120.109
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect to HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Rewrite extensionless URLs to include .html
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.*)$ $1.html [L]
+
+</IfModule>
+
+# Custom error page for 404
+ErrorDocument 404 404.html
+
+# Block specific IPs
+<RequireAll>
+    Require all granted
+    Require not ip 185.75.225.159
+    Require not ip 62.201.243.242
+    Require not ip 212.237.120.109
+</RequireAll>

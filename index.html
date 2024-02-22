@@ -254,20 +254,21 @@ text-decoration: none;
     </div>
 
     <script>
-        // Show the modal initially
-        document.getElementById('modal-overlay').style.display = 'flex';
+      // Show the modal when the page loads
+      document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('modal-overlay').style.display = 'flex';
+      });
 
-        function openModal() {
-            // Hide the modal on tap
-            document.getElementById('modal-overlay').style.display = 'none';
-        }
+      function openModal() {
+          // Hide the modal on tap
+          document.getElementById('modal-overlay').style.display = 'none';
+      }
 
-        function closeModal() {
-            // Close the modal overlay
-            document.getElementById('modal-overlay').style.display = 'none';
-        }
-    </script>
-
+      function closeModal() {
+          // Close the modal overlay
+          document.getElementById('modal-overlay').style.display = 'none';
+      }
+  </script>
         </ul>
       </nav><!-- .nav-menu -->
 

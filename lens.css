@@ -81,7 +81,7 @@
 
  /* Add some basic styling to the popup */
  #modal-overlay {
-  display: flex; /* Change from 'none' to 'flex' */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -95,7 +95,7 @@
 
 /* Add your styles for the modal content here */
 #modal-content {
-  background: #1e1e1e;
+  background: #fff;
   padding: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
