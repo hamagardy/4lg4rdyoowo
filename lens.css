@@ -137,7 +137,7 @@ button {
 }
 
 .gallery-item video {
-  max-width: 120px;
+  max-width: 110px;
   height: auto;
   display: block;
   border-radius: 15px;
@@ -148,7 +148,7 @@ button {
   top: 70%; /* Adjusted position */
   left: 50%; /* Adjusted position */
   transform: translate(-50%, -50%) rotate(0deg); /* Centering the icon and initial rotation */
-  max-width: 72px;
+  max-width: 62px;
   border-radius: 10%; /* Making the icon circular */
   color: #fff;
   font-size: 14px;
