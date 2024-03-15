@@ -55,7 +55,7 @@ button {
   justify-content: center;
   max-width: 900px;
   margin: 50px auto;
-  padding: 20px; /* Adding padding for spacing */
+  padding: 10px; /* Adding padding for spacing */
 }
 
 .gallery-item {
@@ -79,7 +79,7 @@ button {
   max-width: 150px;
   height: auto;
   display: block;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .icon-overlay {
@@ -102,7 +102,9 @@ button {
 }
 .gallery-item p {
   font-weight: bold;
+      line-height: 5; /* Adjust the line-height value as needed 
   color: black;
+  
   font-size: 10px;
 }
 /* Media query for mobile devices */
