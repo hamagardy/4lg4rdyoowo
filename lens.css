@@ -101,16 +101,17 @@ button {
   transform: translate(-50%, -50%) rotate(360deg); /* Rotation effect on hover */
 }
 .gallery-item p {
-  font-weight: bold;
-      line-height: 5; 
-  color: black;
+    color: black;
   
   font-size: 10px;
+  font-weight: bold;
 }
+      line-height: 5; /* Adjust the line-height value as needed 
+
 /* Media query for mobile devices */
-@media screen and (max-width: 7200px) {
+@media screen and (max-width: 8200px) {
   .gallery-item {
-    max-width: 135px; /* Adjusting the maximum width for smaller screens */
+    max-width: 125px; /* Adjusting the maximum width for smaller screens */
     border-radius: 10px; /* Adjusting the border radius for smaller screens */
   }
   .gallery-item video {
@@ -120,6 +121,7 @@ button {
     border-radius: 10px;
   }
 }
+
 
 
 
