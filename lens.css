@@ -46,9 +46,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px; /* Adding padding for spacing */
+  max-width: 800px;
 }
 
 .gallery {
@@ -56,13 +54,13 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 900px;
-  margin: 20px auto;
+  margin: 50px auto;
   padding: 20px; /* Adding padding for spacing */
 }
 
 .gallery-item {
   position: relative;
-  margin: 10px;
+  margin: 5px;
   overflow: hidden;
   color: black; /* Setting text color to black */
   border-radius: 15px;
@@ -102,12 +100,22 @@ button {
 .icon-overlay:hover {
   transform: translate(-50%, -50%) rotate(360deg); /* Rotation effect on hover */
 }
-
+.gallery-item p {
+  font-weight: bold;
+  color: black;
+  font-size: 10px;
+}
 /* Media query for mobile devices */
 @media screen and (max-width: 7200px) {
   .gallery-item {
-    max-width: 145px; /* Adjusting the maximum width for smaller screens */
+    max-width: 135px; /* Adjusting the maximum width for smaller screens */
     border-radius: 10px; /* Adjusting the border radius for smaller screens */
+  }
+  .gallery-item video {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
   }
 }
 
